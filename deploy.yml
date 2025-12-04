@@ -1,0 +1,10 @@
+---
+- name: Deploy Web App
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Copy WAR to Tomcat
+      copy:
+        src: target/SampleWebApp.war
+        dest: /var/lib/tomcat10/webapps/myapp.war
+        mode: 0777
