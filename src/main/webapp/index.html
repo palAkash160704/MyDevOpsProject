@@ -1,6 +1,22 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>DevOps Dashboard</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; text-align: center; margin-top: 50px; }
+        .card { background: white; padding: 40px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #2ecc71; }
+        .status { background-color: #e8f8f5; color: #27ae60; padding: 10px 20px; border-radius: 20px; font-weight: bold; }
+        .footer { margin-top: 20px; color: #888; font-size: 12px; }
+    </style>
+</head>
 <body>
-    <h1 style="color: green; font-size: 50px;">IT FINALLY WORKS!</h1>
-    <p>This is my DevOps Capstone Project.</p>
+    <div class="card">
+        <h1>🚀 Deployment Successful</h1>
+        <p>This application was deployed automatically using a CI/CD Pipeline.</p>
+        <br>
+        <span class="status">● System Operational</span>
+        <div class="footer">Pipeline: Git → Jenkins → Ansible → Tomcat</div>
+    </div>
 </body>
 </html>
